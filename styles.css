@@ -5,6 +5,7 @@
     --color-light:#37475A;
     --color-search:#FEBD69;
     --font-size-small:8px;
+    --font-size-medium:10px;
     --font-size-large:12px;
     --font-size-larger:14px;
 }
@@ -48,6 +49,8 @@ header-top-portion{
 }
 #header-top-image{
     width:120px;
+    margin-left: -30px;
+    /* margin-top: 0px; */
     /* background-color: var(--color-dark); */
 }
 #header-top-delivery{
@@ -77,7 +80,7 @@ header-top-portion{
 }
 #header-top-search-category{
     width:80px;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-medium);
     background-color: rgb(238, 237, 237);
     height:40px;
     padding-top: 15px;
@@ -112,10 +115,10 @@ header-top-portion{
     flex-direction: column;
 }
 #header-top-user-name{
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-small);
 }
 #header-top-user-account{
-    font-size: var(--font-size-larger);
+    font-size: var(--font-size-large);
     font-family: AmazonEmberBold;
 }
 
@@ -124,9 +127,20 @@ header-top-portion{
     flex-direction: column;
 }
 #header-top-order-return{
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-small);
 }
 #header-top-order-order{
-    font-size: var(--font-size-larger);
+    font-size: var(--font-size-large);
     font-family: AmazonEmberBold;
+}
+#header-top-cart{
+    display: flex;
+    
+}
+#header-top-cart-logo{
+    width:40px;
+}
+#header-top-cart-detail{
+    color: var(--color-search);
+    align-self: self-end;
 }
