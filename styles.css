@@ -25,11 +25,13 @@ html{
     font-family: AmazonEmber;
     color: rgb(214, 208, 208);
     background-color: rgb(214, 208, 208);
+    z-index: -2;
 }
 body{
     width:100%;
     height:100px;
     margin: 0px;
+    z-index:-2;
 }
 header{
     /* padding: 6px; */
@@ -213,6 +215,7 @@ main{
     position: absolute;
     width:100%;
     z-index: -1;
+    background-image: url("./images/image1.jpg");
 }
 #main-products{
     display: flex;
@@ -246,6 +249,7 @@ main{
 footer{
     margin-top: 50px;
     margin: auto;
+    color:white;
     
 }
 
@@ -253,12 +257,121 @@ footer{
     margin-top: 50px;
     height:50px;
     background-color: var(--color-light);
+    
+}
+#footer-top-text{
+    width:50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    font-size: var(--font-size-large);
 }
 #footer-middle{
-    height:400px;
+    height:500px;
     background-color: var(--color-medium);
 }
+#footer-middle-top{
+    display: flex;
+    width:60%;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer-middle-top-card{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    justify-content: space-between;
+    height:200px;
+    border: solid  2px white;
+    border-width: 2px;
+    
+}
+.footer-middle-top-header{
+    margin-top: 50px;
+    font-family: AmazonEmberBold;
+    margin-bottom: 10px;
+}
+.footer-middle-top-data{
+    /* margin-top: 50px; */
+    font-family: AmazonEmber;
+    margin-bottom: 10px;
+    color: rgb(195, 193, 193);
+    font-size: var(--font-size-large);
+    
+}
+.footer-middle-top-data:last-child{
+    margin-bottom: 55px;
+}
+#footer-middle-bottom{
+    border-top: solid rgb(86, 86, 86) 0.01px;
+    /* width:60%;
+    margin: auto; */
+    padding-top:50px;
+}
+
+#footer-middle-bottom-top{
+    /* width:100px; */
+    /* margin-top:50px; */
+    /* margin-left:500px; */
+    display: inline-block;
+    
+}
+#footer-middle-bottom-top-image{
+    width:100px;
+    
+    margin-left:550px;
+}
+#footer-middle-bottom-bottom{
+    width:100px;
+    position: relative;
+    padding: 10px;
+    top:-10px;
+    display: inline-block;
+    margin-left:50px;
+    color: rgb(216, 215, 215);
+    border-radius: 8px;
+    border: solid 1px rgb(98, 98, 98);
+}
+#contries{
+    display: flex;
+    width: 55%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: var(--font-size-small);
+}
 #footer-bottom{
-    height:150px;
+    height:300px;
     background-color: var(--color-dark);
+    
+}
+#footer-bottom-top{
+    width:60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: AmazonEmber;
+    font-size: var(--font-size-medium);
+    padding-top: 40px;
+    /* justify-content: center; */
+    
+}
+.footer-bottom-top-container{
+    /* margin-right: 80px; */
+    margin-bottom: 30px;
+    width:138px;
+    /* text-align: center; */
+}
+.footer-bottom-top-data{
+    color: gray;
+}
+#footer-bottom-bottom{
+    width:60%;
+    margin: auto;
+    text-align: center;
+    color:rgb(202, 200, 200);
+    margin-top: 30px;
 }
