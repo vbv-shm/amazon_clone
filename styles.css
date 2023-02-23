@@ -26,6 +26,8 @@ html{
     color: rgb(214, 208, 208);
     background-color: rgb(214, 208, 208);
     z-index: -2;
+    min-width: 1500px;
+    max-width: 1700px;
 }
 body{
     width:100%;
